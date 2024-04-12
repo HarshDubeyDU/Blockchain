@@ -153,6 +153,66 @@ slither --version
 
 </details>
 
+<details>
+  <summary><code>Writing Smart Contract with possible attacks</code></summary>
+
+  ```solidity
+pragma solidity ^0.4.15;
+
+contract Reentrance {
+    mapping (address => uint) userBalance;
+   
+    function getBalance(address u) constant returns(uint){
+        return userBalance[u];
+    }
+
+    function addToBalance() payable{
+        userBalance[msg.sender] += msg.value;
+    }   
+
+    function withdrawBalance(){
+        // send userBalance[msg.sender] ethers to msg.sender
+        // if mgs.sender is a contract, it will call its fallback function
+        if( ! (msg.sender.call.value(userBalance[msg.sender])() ) ){
+            throw;
+        }
+        userBalance[msg.sender] = 0;
+    }   
+
+    function withdrawBalance_fixed(){
+        // to protect against re-entrancy, the state variable
+        // has to be change before the call
+        uint amount = userBalance[msg.sender];
+        userBalance[msg.sender] = 0;
+        if( ! (msg.sender.call.value(amount)() ) ){
+            throw;
+        }
+    }   
+
+    function withdrawBalance_fixed_2(){
+        // send() and transfer() are safe against reentrancy
+        // they do not transfer the remaining gas
+        // and they give just enough gas to execute few instructions    
+        // in the fallback function (no further call possible)
+        msg.sender.transfer(userBalance[msg.sender]);
+        userBalance[msg.sender] = 0;
+    }   
+   
+}
+
+```
+
+<br />
+<details><summary><code>Writing in Vim</code></summary>
+  
+<div align="center">
+  <img src="https://github.com/HarshDubeyDU/Blockchain/assets/87745474/77db2f2f-5bc5-4e1d-971c-937fc7f665b5" alt="Contract in Vim Editor" />
+</div>
+
+</details>
+
+</details>
+
 ## <a name="surya">Surya</a>
 
 <details>
