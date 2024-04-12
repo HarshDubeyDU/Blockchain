@@ -144,5 +144,43 @@ Installation Command
 ```bash
 pip3 install slither-analyzer
 ```
+<br />
+Check Slither version
+
+```bash
+slither --version
+```
+
+</details>
+
+## <a name="surya">Surya</a>
+
+<details>
+  <summary><code>Installing Solidity Compiler</code></summary>
+<br />
+  
+Installation Command
+
+```bash
+pip3 install solc-select
+```
+
+</details>
+
+<details>
+  <summary><code>Installing Slither</code></summary>
+<br />
+  
+Installation Command
+
+```bash
+pip3 install slither-analyzer
+```
+<br />
+Check Slither version
+
+```bash
+slither --version
+```
 
 </details>
