@@ -44,7 +44,25 @@ Blockchain technology is an advanced database mechanism that allows transparent 
 ## <a name="contract">Writing Smart Contract and generating Documentation using Solgraph</a>
 
 <details>
+  <summary><code>Make new directory "data"</code></summary>
+<br />
+  
+  ```bash
+  mkdir data
+  cd data
+  ```
+  
+<br />
+  
+Create smart contract in this directory using IDE, text editor or vim.  
+</details>
+
+<details>
   <summary><code>DataContract.sol</code></summary>
+<br />
+Create Smart Contract like
+
+<br />
 
 ```solidity
 contract DataContract {
@@ -99,3 +117,8 @@ Documentation is created as
   <img src="https://github.com/HarshDubeyDU/Blockchain/blob/main/DataContract.sol.png">
 </div>
 </details>
+
+
+# <a name="auditing">Auditing Smart Contract using different Tools</a>
+
+## <a name="slither">Slither</a>
