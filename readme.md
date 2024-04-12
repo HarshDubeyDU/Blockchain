@@ -122,3 +122,27 @@ Documentation is created as
 # <a name="auditing">Auditing Smart Contract using different Tools</a>
 
 ## <a name="slither">Slither</a>
+
+<details>
+  <summary><code>Installing Solidity Compiler</code></summary>
+<br />
+  
+Installation Command
+
+```bash
+pip3 install solc-select
+```
+
+</details>
+
+<details>
+  <summary><code>Installing Slither</code></summary>
+<br />
+  
+Installation Command
+
+```bash
+pip3 install slither-analyzer
+```
+
+</details>
