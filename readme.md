@@ -41,7 +41,7 @@ Difficulty adjusted every 2 weeks
 # Blockchain
 Blockchain technology is an advanced database mechanism that allows transparent information sharing within a business network. A blockchain database stores data in blocks that are linked together in a chain.
 
-## <a name="contract">Contract</a>
+## <a name="contract">Writing Smart Contract and generating Documentation using Solgraph</a>
 
 <details>
   <summary><code>DataContract.sol</code></summary>
@@ -69,3 +69,33 @@ contract DataContract {
 ```
 </details>
 
+<details>
+  <summary><code>Docker pull devopstestlab/solgraph</code></summary>
+<br />
+
+Pull solgraph using command
+
+```bash
+docker pull devopstestlab/solgraph
+```
+
+<div align="center">
+  <img src="https://github.com/HarshDubeyDU/Blockchain/blob/main/docker%20pull%20devopstestlab%20solgraph.png" />
+</div>
+</details>
+
+<details>
+<summary><code>Create Documentationn using solgraph</code></summary>
+
+<br />
+Enter this command to generate Documentation of your Smart Contract
+
+```bash
+docker run -it --rm -v $PWD:/data devopstestlab/solgraph
+```
+
+Documentation is created as
+<div align="center">
+  <img src="https://github.com/HarshDubeyDU/Blockchain/blob/main/DataContract.sol.png">
+</div>
+</details>
