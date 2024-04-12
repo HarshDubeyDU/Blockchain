@@ -39,4 +39,33 @@ Reward given to miner who found valid block
 Difficulty adjusted every 2 weeks
 
 # Blockchain
-A chain of blocks that together form the blockchain
+Blockchain technology is an advanced database mechanism that allows transparent information sharing within a business network. A blockchain database stores data in blocks that are linked together in a chain.
+
+## <a name="contract">Contract</a>
+
+<details>
+  <summary><code>DataContract.sol</code></summary>
+
+```solidity
+contract DataContract {
+  uint balance;
+
+  function DataContract() {
+    Mint(1000000);
+  }
+
+  function Mint(uint amount) internal {
+    balance = amount;
+  }
+
+  function Withdraw() {
+    msg.sender.send(balance);
+  }
+
+  function GetBalance() constant retruns(uint) {
+    return balance;
+  }
+}
+```
+</details>
+
