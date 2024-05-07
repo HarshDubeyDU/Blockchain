@@ -244,3 +244,48 @@ slither --version
 ```
 
 </details>
+
+# HyperLedger
+## Fabric
+
+### Installation (Linux)
+
+<details>
+  <summary><code>Create a new User</code></summary>
+  <br />
+  Create new User
+  Provide password for the new User
+
+  ```bash
+    sudo adduser fabric
+  ```
+  
+  <br />
+  Add the user to the sudo groups
+
+  ```bash 
+    sudo usermod -aG sudo newuser
+  ```
+
+  <br />
+  Login to "fabric" user
+
+  ```bash
+    su fabric
+  ```
+
+</details>
+
+<details>
+    <summary><code>Docker Installation</code></summary>
+    Install curl
+
+  ```bash
+    sudo apt-get update
+    sudo apt-get install curl
+    curl --version
+  ```
+
+    Install Docker
+
+</details>
