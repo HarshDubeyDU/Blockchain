@@ -282,6 +282,7 @@ slither --version
 
 <details>
     <summary><code>Docker Installation</code></summary>
+    <br />
     Install curl
 
   ```bash
@@ -290,6 +291,51 @@ slither --version
     curl --version
   ```
 
+<br />
     Install Docker
 
+  ```bash
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  ```
+
+<br />
+    Add Docker Repositories to APT sources
+
+  ```bash
+    sudo add-apt-repository “deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable”
+  ```
+
+<br />
+    Update package database and Install Docker
+
+  ```bash
+    sudo apt-get update
+    sudo apt-get install -y docker-ce
+  ```
+
+</details>
+
+<details>
+    <summary><code>GoLang</code></summary>
+    <br />
+    Install GoLang Package 
+
+  ```bash
+    curl -O https://storage.googleapis.com/golang/go1.11.linux-amd64.tar.gz
+  ```
+    
+<br />
+    Extract the package
+
+  ```bash
+    sudo tar xvf go1.11.linux-amd64.tar.gz
+  ```
+
+<br />
+    Set the GOPATH
+    
+  ```bash
+    export GOPATH=$HOME/go
+    export PATH=$PATH:$GOPATH/bin
+  ```
 </details>
