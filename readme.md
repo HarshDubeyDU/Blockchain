@@ -349,3 +349,38 @@ slither --version
 
 </details>
 </details>
+
+<details>
+    <summary><code>Nodejs and npm</code></summary>
+    <br />
+    Download the installation script using curl
+    
+  ```bash
+    curl -sL https://deb.nodesource.com/setup_8.x -o nodesource_setup.sh
+  ```
+  
+  <br />
+    Run script under sudo and Install the nodejs
+  
+  ```bash
+    sudo bash nodesource_setup.sh
+    sudo apt-get install nodejs
+  ```
+</details>
+
+<details>
+    <summary><code>Python Installation</code></summary>
+    <br />
+
+  ```bash
+    sudo apt-get install python2.7
+  ```
+<details>
+  <summary><code>Installation Image</code></summary>
+  
+  ![326421449-c16b26ea-6f61-422b-b422-3ac8bd137437](https://github.com/HarshDubeyDU/Blockchain/assets/87745474/06a4122c-b8af-4e32-8424-cbfe2a11da17)
+
+</details>
+</details>
+
+
