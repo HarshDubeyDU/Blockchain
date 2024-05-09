@@ -1,4 +1,4 @@
-# Origin
+![image](https://github.com/HarshDubeyDU/Blockchain/assets/87745474/f9956289-7c86-460c-936f-fc002823aabf)# Origin
 
 ## Created by [SATOSHI NAKAMOTO]() in 2008
 
@@ -397,4 +397,34 @@ slither --version
   ![328150585-f49c5f82-ef25-4f4e-9cd5-c633917f0c03](https://github.com/HarshDubeyDU/Blockchain/assets/87745474/78d9ab65-da44-4596-b5aa-f9eeb80e18f0)
 
   </details>
+</details>
+
+<details>
+  <summary><code>Test the fabric Network</code></summary>
+  <br />
+  Open the fabric-samples and go to the first-network.
+
+  ```bash
+    cd fabric-samples/first-network
+  ```
+
+  <br />
+  To test it, run the byfn.sh . It is a test script, it first set up the network with 2 organizations org1 and org2 with 2 peers each and an orderer
+
+  ```bash
+    ./byfn.sh up
+  ```
+
+![image](https://github.com/HarshDubeyDU/Blockchain/assets/87745474/c6184ada-d236-4b5c-b5a5-dcec6e75aa5f)
+![image](https://github.com/HarshDubeyDU/Blockchain/assets/87745474/4aa3983d-61ea-4e92-b9b6-3f8ec39002b9)
+
+  <br />
+  Clean the Network
+  
+  ```bash
+    ./byfn down
+  ```
+
+![image](https://github.com/HarshDubeyDU/Blockchain/assets/87745474/63e54e3a-9463-4453-a287-897846ffa5c8)
+
 </details>
