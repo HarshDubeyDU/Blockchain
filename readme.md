@@ -1,4 +1,4 @@
-![image](https://github.com/HarshDubeyDU/Blockchain/assets/87745474/f9956289-7c86-460c-936f-fc002823aabf)# Origin
+# Origin
 
 ## Created by [SATOSHI NAKAMOTO]() in 2008
 
