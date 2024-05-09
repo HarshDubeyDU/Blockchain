@@ -4,9 +4,13 @@
 
 # Text Encryption
 Plain Text  --> No Encryption
+<br />
 Encoding --> Example: base64
+<br />
 Hashing --> Example: SHA-256
+<br />
 Encryption --> Types: Symmmetric Encryption , Aysmmetric Encryption
+<br />
 
 # Types of Keys
 1. Public Key (Used for encryption)
